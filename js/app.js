@@ -20,3 +20,8 @@ srs.reveal('.main-content h1', {delay:310, origin: 'left'});
 srs.reveal('.main-content p', {delay:410, origin: 'right'});
 srs.reveal('.social', {delay:510, origin: 'left'});
 srs.reveal('.main-btnn', {delay:610, origin: 'top'});
+srs.reveal('.portfolio-content h1',{delay:110, origin: 'left'});
+srs.reveal('.portfolio-content p',{delay:210, origin: 'top'});
+srs.reveal('.portfolio-content h2',{delay:310, origin: 'left'});
+srs.reveal('.project-details',{delay:410, origin: 'bottom'});
+srs.reveal('.porfolio-image',{delay:510, origin: 'right'});

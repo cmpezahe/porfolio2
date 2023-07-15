@@ -13,7 +13,7 @@
     --bg-color: #334f64;
     --big-font: 3.5rem;
     --h4-font: 1.6rem;
-    --p-font: 1.1rem;
+    --p-font: 0.75rem;
     --btn-color: #334f6477;
     --background: #111;
     --bg-opaque: hsla(0, 0%, 7%, .25);
@@ -23,10 +23,12 @@
     --brand: #0aff9d;
     --text-xs: 1.2rem;
     --text-sm: 1.4rem;
-    --text-md: 2.2rem;
-    --text-lg: 3.1rem;
+    --text-md: 3.2rem;
+    --text-sub_header: 2.3rem;
     --text-xl: 5.6rem;
     --text-2xl: 9.6rem;
+    --nav-font-size: .90rem;
+
 
 }
 
@@ -37,6 +39,7 @@ div {
 body,
 html {
     max-width: 100vw;
+
     background: var(--background);
     font-size: var(--text-sm);
 }
@@ -85,12 +88,14 @@ header {
 }
 
 .navlist a {
-    font-size: var(--p-font);
-    font-weight: 500;
+    font-size: var(--nav-font-size);
+    font-weight: 200;
     color: var(--text-color);
     margin-left: 40px;
     transition: all 0.5s ease;
+    /* font-family: 'Inter', sans-serif; */
 }
+
 
 .navlist a:hover {
     color: var(--main-color);
@@ -109,7 +114,7 @@ header {
     border: 2px solid var(--main-color);
     border-radius: 8px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     transition: all 0.55s ease;
 }
 
@@ -123,11 +128,11 @@ header {
 .section-wrapper {
     position: relative;
     z-index: 10;
-    max-width: 1150px;
+    max-width: 1250px;
     margin: auto;
     /* padding: 9.6rem; */
     overflow: hidden;
-    padding: 9.6rem 6.6rem;
+    padding: 9.6rem 4rem;
 }
 
 #hero {
@@ -143,7 +148,7 @@ header {
 }
 
 .main-content h1 {
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
     color: var(--text);
     font-weight: 900;
     line-height: 1.2;
@@ -159,20 +164,17 @@ header {
 
 .main-content h4 {
     font-size: var(text-sm);
-    font-weight: 400;
+    font-weight: 200;
     color: var(--text);
 }
 
 .main-content h4 span {
     color: var(--main-color);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .main-content p {
     font-size: 20px;
-    /* font-weight: 200; */
-
-    /* max-width: 720px; */
     color: #eee;
     line-height: 30px;
     display: block;
@@ -180,11 +182,11 @@ header {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-weight: 200;
 }
 
 .social {
     margin: 40px auto;
-
 
 }
 
@@ -192,16 +194,17 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     color: var(--main-color);
     border-radius: 50%;
     backdrop-filter: brightness(88%);
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 17px;
     box-shadow: 0 0 20px transparent;
     cursor: pointer;
     transition: all 0.55s ease;
+
 }
 
 .social a:hover {
@@ -213,11 +216,11 @@ header {
     display: inline-block;
     padding: 11px 26px;
     background: var(--main-color);
-    color: var(--bg-color);
+    color: var(--background-dark);
     border: 2px solid var(--main-color);
     border-radius: 8px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     transition: all 0.5s ease;
 }
 
@@ -237,7 +240,7 @@ header {
 
 .btn2:hover {
     background: var(--main-color);
-    color: var(--bg-color);
+    color: var(--background-dark);
 }
 
 

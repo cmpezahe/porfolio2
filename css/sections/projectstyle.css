@@ -1,0 +1,123 @@
+.project_header_section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.project_header_line {
+    width: 100%;
+    height: 1px;
+    background: var(--text);
+    opacity: .3;
+}
+
+
+
+.project_header_title {
+    font-size: var(--text-sub_header);
+    font-weight: 900;
+    text-align: end;
+    color: var(--text);
+}
+
+.project_header_title span {
+    color: var(--main-color);
+
+}
+
+.projects_projectTitle__Rv3E5 h4 {
+    font-weight: 700;
+    font-size: 25px;
+    flex-shrink: 0;
+    max-width: calc(100% - 150px);
+    color: var(--text);
+}
+
+.projects_projects__y7TVk p {
+    font-size: 18px;
+    color: #eee;
+    line-height: 26px;
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.projects_projectTitle__Rv3E5 {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.projects_projects__y7TVk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+    gap: 3.2rem;
+}
+
+.projects_projectImage__JxEFv {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: var(--background-light);
+    cursor: pointer;
+    position: relative;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+section {
+    display: block;
+}
+
+.projects_projectImage__JxEFv img {
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 20%;
+    transition: all .25s;
+    border-radius: .4rem;
+
+}
+
+.projects_projectCopy__C5vpE {
+    margin: 1rem 0;
+}
+
+.projects_projectTitleLine__QzzUe {
+    width: 100%;
+    height: 1px;
+    background: var(--text);
+    opacity: .3;
+}
+
+.projects_projectTitle__Rv3E5 {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.projects_projectTech__vVqDM {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    font-size: 18px;
+    color: var(--main-color);
+    margin: .8rem 0;
+}
+
+.projects_projectDescription__K2fsn {
+    font-weight: 200;
+}
+
+.projects_projectDescription__K2fsn span {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 200;
+    color: var(--main-color);
+    cursor: pointer;
+}

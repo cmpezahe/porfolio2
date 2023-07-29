@@ -1,0 +1,62 @@
+/* Contact Container */
+.contact_contactWrapper__imGw1 {
+    max-width: 700px;
+    margin: auto;
+    color: var(--text);
+    border-radius: 1.2rem;
+}
+
+/* Contact Titile */
+/* h4 */
+.contact_contactTitle__oMNhX {
+    font-size: var(--text-md);
+    text-align: center;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* Dot /span */
+.contact_contactTitle__oMNhX span {
+    color: var(--main-color);
+}
+
+/* Contact Pagaragraph */
+.contact_contactCopy__oCo8c {
+    text-align: center;
+    font-weight: 200;
+    margin: 2.4rem 0;
+    font-size: var(--paragraph-size);
+}
+
+/* Contact Email section  */
+.contact_contactEmail__Fr6hH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: var(--text-sub-sub_header);
+    margin: auto;
+    transition: color .25s;
+    color: var(--text);
+}
+
+/* An Tag */
+.contact_contactCopy__oCo8c a {
+    color: var(--main-color);
+}
+
+.contact_contactCopy__oCo8c a:hover {
+    /* color: var(--brand); */
+    text-decoration: underline;
+}
+
+
+svg {
+    stroke: currentcolor;
+    fill: currentcolor;
+    stroke-width: 0;
+    height: 1.4rem;
+    width: 1.4rem;
+}

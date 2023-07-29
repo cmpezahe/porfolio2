@@ -21,13 +21,16 @@
     --background-dark: #080808;
     --text: #ebecf3;
     --brand: #0aff9d;
+    --span-font-size: 0.95rem;
     --text-xs: 1.2rem;
     --text-sm: 1.4rem;
+    --paragraph-size: 0.75rem;
     --text-md: 3.2rem;
     --text-sub_header: 2.3rem;
     --text-xl: 5.6rem;
     --text-2xl: 9.6rem;
     --nav-font-size: .90rem;
+    --text-sub-sub_header: 1.2rem;
 
 
 }
@@ -45,7 +48,7 @@ html {
 }
 
 ::selection {
-    background: var(--brand);
+    background: var(--main-color);
     color: var(--background);
 }
 
@@ -62,7 +65,7 @@ header {
     padding: 10px 20%;
     background: transparent;
     transition: all 0.55s ease;
-    background-color: var(--background-light);
+    background-color: var(--background);
 }
 
 
@@ -106,15 +109,19 @@ header {
     color: var(--main-color);
 }
 
+/* .navlist li a:hover {
+    text-decoration: underline;
+} */
+
 .h-btn {
     display: inline-block;
-    padding: 11px 26px;
+    padding: 10px 20px;
     background: transparent;
     color: var(--main-color);
     border: 2px solid var(--main-color);
     border-radius: 8px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 200;
     transition: all 0.55s ease;
 }
 
@@ -132,7 +139,7 @@ header {
     margin: auto;
     /* padding: 9.6rem; */
     overflow: hidden;
-    padding: 9.6rem 4rem;
+    padding: 9rem 4rem;
 }
 
 #hero {

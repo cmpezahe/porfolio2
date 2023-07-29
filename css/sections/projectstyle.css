@@ -121,3 +121,37 @@ section {
     color: var(--main-color);
     cursor: pointer;
 }
+
+/* .long-text {
+    height: 80px;
+    overflow: hidden;
+}
+
+.long-text.expanded {
+    height: auto;
+    margin-bottom: 0;
+}
+
+.show-more {
+    background-color: var(--main-color);
+    color: var(--background);
+    padding: 1.5px 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.6rem;
+    border-radius: 1px;
+}
+
+.show-less {
+    background-color: var(--main-color);
+    color: var(--background);
+    padding: 1px 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.6rem;
+    border-radius: 1px;
+} */
+.show-more,
+.show-less {
+    display: none;
+}

@@ -99,14 +99,14 @@
     }
 
 
-    .show-more,
+    /* .show-more,
     .show-less {
         display: none;
-    }
+    } */
 
     /* ! === PROJECT STYLE HERE */
     .projects_projects__y7TVk {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         padding-top: 1.2rem;
     }
 
@@ -230,14 +230,49 @@
     }
 
     /*! === EXPERIENCE STYLE ENDS HERE  */
-    .show-more,
+    /* .show-more,
     .show-less {
         display: none;
-    }
+    } */
 
     /*! === CONTACT STYLING   */
     .contact_contactTitle__oMNhX {
         font-size: 2.8rem;
+    }
+
+    .long-text {
+        height: 80px;
+        overflow: hidden;
+    }
+
+    .show-less,
+    .show-more {
+        display: inline;
+    }
+
+    .long-text.expanded {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .show-more {
+        background-color: var(--main-color);
+        color: var(--background);
+        padding: 1.8px 6.5px;
+        border: none;
+        cursor: pointer;
+        font-size: 0.9rem;
+        border-radius: 1px;
+    }
+
+    .show-less {
+        background-color: var(--main-color);
+        color: var(--background);
+        padding: 1.8px 6.5px;
+        border: none;
+        cursor: pointer;
+        font-size: 0.9rem;
+        border-radius: 1px;
     }
 
 
@@ -395,6 +430,11 @@
 
     .projects_projects__y7TVk p {
         margin-block-end: 0;
+    }
+
+    .show-less,
+    .show-more {
+        display: inline;
     }
 
     .long-text.expanded {

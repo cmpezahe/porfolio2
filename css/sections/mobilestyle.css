@@ -86,17 +86,17 @@
     }
 
     /*! === ABOUT SECTION STYLE ===  */
-    .about_about__section {
+    /* .about_about__section {
         display: grid;
         grid-template-columns: 1fr;
         text-align: justify;
 
     }
+ */
 
-
-    .about_header_title {
+    /* .about_header_title {
         font-size: 1.8rem;
-    }
+    } */
 
 
     /* .show-more,
@@ -349,6 +349,7 @@
         text-align: center;
     }
 
+    /* 
     .about_about__section {
         padding: 2rem 0.1rem;
     }
@@ -364,7 +365,7 @@
 
     .about_highlightFirstLetter:first-letter {
         padding: 0px;
-    }
+    } */
 
     .projects_projects__y7TVk {
         display: grid;

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
+  <link href="/dist/output.css" rel="stylesheet">
   <!-- CSS Links  -->
 
   <link rel="stylesheet" href="/css/style.css" />
@@ -55,14 +56,14 @@
       <section id="hero" class="section-wrapper">
         <div class="main-content">
           <h1>Hi, I'm Ezzy<span>.</span></h1>
-          <h4>I'm a <span>Front-End Developer</span></h4>
+          <h4>I'm a <span class="input">Front-End Developer</span></h4>
           <!-- <h1>I'm <span class="input"></span></h1> -->
           <p class="text-lg font">
-            BSc (Hons) Software Engineering grad | Skilled in Java,
+            BSc <span class="text-peach font-bold ">(Hons)</span> Software Engineering grad | Skilled in Java,
             PHP/Laravel, Python, JS | Experienced in web development and agile
             methodologies | Seeking junior web/software dev roles | Passionate
-            about technology, fitness, and continuous improvement | Let's
-            connect! .
+            about technology, fitness, and continuous improvement | <span class="text-peach font-bold"> Let's
+              connect!</span> .
           </p>
 
           <div class="social">
@@ -80,107 +81,97 @@
 
       <!-- About -->
 
-      <section id="about" class="section-wrapper">
+      <div id="about-section" class="about-section max-w-[70rem] mx-auto px-4 mt-44 sm:px-4 lg:px-8">
         <div class="about_header_section" style="flex-direction: row-reverse">
+
           <div class="about_header_line"></div>
           <h3>
-            <div style="position: relative; width: fit-content; overflow: hidden">
-              <div style="opacity: 1; transform: none">
-                <span class="about_header_title"> About<span>.</span> </span>
+            <div class="relative w-full overflow-hidden">
+              <div class="opacity-100 transform-none;">
+                <span class="about_header_title">
+                  About<span>.</span>
+                </span>
               </div>
-              <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--main-color);
-                    z-index: 20;
-                  "></div>
             </div>
           </h3>
         </div>
-        <div class="about_about__section">
-          <div>
-            <div style="position: relative; width: fit-content; overflow: hidden">
-              <div style="opacity: 1; transform: none">
-                <p class="about_aboutText_paragraph about_highlightFirstLetter">
-                  I am a dedicated Software Engineering professional with a
-                  strong interest in the field and a belief in the
-                  transformative power of technology. Equipped with a BSc
-                  (Hons) degree in Software Engineering, I have gained a solid
-                  foundation in information systems, software engineering
-                  principles, and user experience integration. Skilled in
-                  JavaScript, Java, PHP (Laravel framework), React framework,
-                  CSS, and HTML, I am actively seeking a junior role in web
-                  and software development.
-                </p>
+        <div class="grid grid-cols-1 mt-14 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- First Grid (70% width) -->
+          <div class="col-span-3  md:col-span-2 lg:col-span-2">
+            <div class="relative w-full overflow-hidden mb-6">
+              <div class="opacity-100 transform-none">
+                <p
+                  class="text-gray-800 text-textcolor  font-primary first-letter:uppercase first-letter:text-2xl first-letter:bg-peach">
+                  I am a dedicated Software Engineering
+                  professional with a strong interest in the field and a belief in the transformative power of
+                  technology. Equipped with a BSc (Hons) degree in Software Engineering, I have gained a solid
+                  foundation in information systems, software engineering principles, and user experience integration.
+                  Skilled in JavaScript, Java, PHP (Laravel framework), React framework, CSS, and HTML, I am actively
+                  seeking a junior role in web and software development.</p>
               </div>
-              <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--main-color);
-                    z-index: 20;
-                  "></div>
-            </div>
-            <div style="position: relative; width: fit-content; overflow: hidden">
-              <div style="opacity: 1; transform: none">
-                <p class="about_aboutText_paragraph">
-                  Alongside my academic qualifications, I have valuable work
-                  experience in the field of information governance, having
-                  served as a data protection professional at an NHS Trust.
-                  This role has honed my expertise in ensuring data security
-                  and compliance. Additionally, I have contributed to the
-                  retail sector as an O2 Guru, teaching and assisting
-                  customers, and as an O2 Sales Advisor, promoting products
-                  and delivering exceptional customer service. Working with
-                  the British Army has further enhanced my communication
-                  skills, confidence, and teamwork abilities, while also
-                  developing my individual management capabilities.
-                </p>
-              </div>
-
-              <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--main-color);
-                    z-index: 20;
-                  "></div>
-            </div>
-            <div style="position: relative; width: fit-content; overflow: hidden">
-              <div style="opacity: 1; transform: none">
-                <p class="about_aboutText_paragraph">
-                  With a proven track record of effective collaboration,
-                  strong problem-solving skills, and a customer-centric
-                  approach, I am well-equipped to contribute to dynamic
-                  organizations and thrive in challenging projects. I am eager
-                  to utilize my experience and skill set to make meaningful
-                  contributions to the field of web and software development
-                  while continuously enhancing my professional growth.
-                </p>
-              </div>
-              <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--main-color);
-                    z-index: 20;
-                  "></div>
             </div>
 
-            <div style="position: relative; width: fit-content; overflow: hidden">
-              <div style="opacity: 1; transform: none">
+            <!-- Second Paragraph -->
+            <div class="relative w-full overflow-hidden mb-6">
+              <div class="opacity-100 transform-none">
+                <p
+                  class="text-gray-800 text-textcolor font-primary first-letter:uppercase first-letter:bg-peach first-letter:text-2xl">
+                  Alongside my academic qualifications, I have
+                  valuable work experience in
+                  the
+                  field of information governance, having served as a data protection professional at an NHS Trust.
+                  This
+                  role has honed my expertise in ensuring data security and compliance. Additionally, I have
+                  contributed
+                  to the retail sector as an O2 Guru, teaching and assisting customers, and as an O2 Sales Advisor,
+                  promoting products and delivering exceptional customer service. Working with the British Army has
+                  further enhanced my communication skills, confidence, and teamwork abilities, while also developing
+                  my
+                  individual management capabilities.</p>
+              </div>
+            </div>
+            <!-- End Second Paragraph -->
+
+
+            <!-- Third Paragraph -->
+            <div class="relative w-full overflow-hidden mb-6">
+              <div class="opacity-100 transform-none">
+                <p
+                  class="text-gray-800 text-textcolor font-primary first-letter:uppercase first-letter:bg-peach first-letter:text-2xl">
+                  With
+                  a proven track record
+                  of effective
+                  collaboration, strong
+                  problem-solving
+                  skills, and a customer-centric approach, I am well-equipped to contribute to dynamic organizations
+                  and
+                  thrive in challenging projects. I am eager to utilize my experience and skill set to make meaningful
+                  contributions to the field of web and software development while continuously enhancing my
+                  professional
+                  growth.</p>
+              </div>
+            </div>
+            <!-- End Third Paragraph -->
+
+
+            <div class="relative w-full overflow-hidden">
+              <div class="opacity-100 transform-none">
                 <div class="about_links__7hF9X">
-                  <div class="about_linksText__OPa1o">
-                    <span>My linkedin</span>
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
-                      width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <div class="mt-6 flex justify-start items-center gap-x-1 md:justify-start">
+                    <span class="font-medium text-xl text-peach">My linkedin</span>
+                    <svg class="text-peach text-xs" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z">
                       </path>
                     </svg>
 
-                    <div class="headinglinks_linkedin">
-                      <span style="opacity: 1; transform: none">
+                    <div class="text-2xl  hover:text-gray-600">
+                      <span sclass="opacity-100 transform-none ">
                         <a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/ezahedie/">
-                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                            height="1.8rem" width="1.8rem" xmlns="http://www.w3.org/2000/svg" color="var(--text)">
+                          <svg class="text-peach" stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 1024 1024" height="1.8rem" width="1.8rem" xmlns="http://www.w3.org/2000/svg"
+                            color="var(--text)">
                             <path
                               d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z">
                             </path>
@@ -191,484 +182,179 @@
                   </div>
                 </div>
               </div>
-              <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--main-color);
-                    z-index: 20;
-                  "></div>
             </div>
           </div>
-          <div class="stats_stats__about">
-            <div style="position: relative; width: fit-content; overflow: hidden">
-              <div style="opacity: 1; transform: none">
-                <div class="stats_statColumn__about">
-                  <h4>
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                      color="var(--brand)" style="color: var(--main-color)" height="2.4rem" width="2.4rem"
-                      xmlns="http://www.w3.org/2000/svg">
+
+          <div class="col-span-2 lg:col-span-1">
+            <div class="relative w-full overflow-hidden">
+              <div class="opacity-100 transform-none mb-8">
+                <div class="flex">
+                  <h4 class="flex items-center mb-4">
+
+
+
+
+                    <svg class="text-peach fill-current stroke-0 w-10 h-7" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024">
                       <path
                         d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM513.1 518.1l-192 161c-5.2 4.4-13.1.7-13.1-6.1v-62.7c0-2.3 1.1-4.6 2.9-6.1L420.7 512l-109.8-92.2a7.63 7.63 0 0 1-2.9-6.1V351c0-6.8 7.9-10.5 13.1-6.1l192 160.9c3.9 3.2 3.9 9.1 0 12.3zM716 673c0 4.4-3.4 8-7.5 8h-185c-4.1 0-7.5-3.6-7.5-8v-48c0-4.4 3.4-8 7.5-8h185c4.1 0 7.5 3.6 7.5 8v48z">
                       </path>
                     </svg>
-                    <span>Use at work</span>
+
+                    <span class="text-2xl text-textcolor">Skilled at</span>
                   </h4>
-                  <div class="stats_skills__about">
-                    <span class="chip">JavaScript</span>
-                    <span class="chip">TypeScript</span>
-                    <span class="chip">HTML</span>
-                    <span class="chip">CSS</span>
-                    <span class="chip">React</span>
-                    <span class="chip">Redux</span>
-                    <span class="chip">NodeJS</span>
-                    <span class="chip">Express</span>
-                    <span class="chip">Postgres</span>
-                    <span class="chip">MongoDB</span>
-                    <span class="chip">GitHub</span>
-                    <span class="chip">Jira</span>
-                    <span class="chip">Heroku</span>
-                    <span class="chip">AWS</span>
-                  </div>
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-sm text-center">
+
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">JS</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">HTML</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">CSS</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">React</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">SQL</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">NodeJS</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">Tailwind</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">AdobeXD</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">Figma</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">GitHub</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">Git</span>
+
                 </div>
               </div>
-              <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--main-color);
-                    z-index: 20;
-                  "></div>
+              <div style="position: absolute; inset: 4px 0px 4px 100%; background: var(--main-color); z-index: 20;">
+              </div>
             </div>
-            <div style="position: relative; width: fit-content; overflow: hidden">
-              <div style="opacity: 1; transform: none">
-                <div class="stats_statColumn__about">
-                  <h4>
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                      color="var(--brand)" style="color: var(--main-color)" height="2.4rem" width="2.4rem"
-                      xmlns="http://www.w3.org/2000/svg">
+            <div class="relative w-full overflow-hidden">
+              <div class="opacity-100 transform-none">
+                <div class="flex mb-4">
+                  <h4 class="flex items-center">
+                    <svg class="text-peach fill-current stroke-0 w-10 h-7" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024">
                       <path
                         d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0 1 96 0 48.01 48.01 0 0 1-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 0 1 8-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 0 1 8 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z">
                       </path>
                     </svg>
-                    <span>Use for fun</span>
+                    <span class="text-2xl text-textcolor font-primary">Learning</span>
                   </h4>
-                  <div class="stats_skills__about">
-                    <span class="chip">Rust</span>
-                    <span class="chip">Tailwind</span>
-                    <span class="chip">Java</span>
-                    <span class="chip">Spring</span>
-                    <span class="chip">Figma</span>
-                    <span class="chip">Whimsical</span>
-                    <span class="chip">Planetscale</span>
-                    <span class="chip">GraphQL</span>
-                    <span class="chip">Python</span>
-                    <span class="chip">FastAPI</span>
-                  </div>
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-sm text-center">
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">JS</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">HTML</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">CSS</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">React</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">SQL</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">NodeJS</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">Tailwind</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">AdobeXD</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">Figma</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">GitHub</span>
+                  <span class="bg-backgroundlight p-2 rounded-2xl cursor-pointer text-textcolor">Git</span>
                 </div>
               </div>
-              <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--brand);
-                    z-index: 20;
-                  "></div>
+            </div>
+            <div style="position: absolute; inset: 4px 0px 4px 100%; background: var(--brand); z-index: 20;">
             </div>
           </div>
         </div>
+      </div>
       </section>
 
-      <!-- Project -->
-      <section id="projects" class="section-wrapper">
-        <div class="project_header_section" style="flex-direction: row">
-          <div class="project_header_line"></div>
-          <h3>
-            <div style="position: relative; width: fit-content; overflow: hidden">
-              <div style="opacity: 1; transform: none">
-                <span class="project_header_title">
-                  Projects<span>.</span>
-                </span>
-              </div>
-              <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--main-color);
-                    z-index: 20;
-                  "></div>
-            </div>
-          </h3>
-        </div>
-        <div class="projects_projects__y7TVk">
-          <!--! FIRST PROJECT STARTS HERE  -->
-          <div style="opacity: 1; transform: none">
-            <div class="projects_projectImage__JxEFv">
-              <img src="/assets/weather.png" alt="An image of the Paint.app project."
-                style="width: 85%; rotate: 0deg" />
-            </div>
-            <div class="projects_projectCopy__C5vpE">
-              <div style="position: relative; width: 100%; overflow: hidden">
-                <div style="opacity: 1; transform: none">
-                  <div class="projects_projectTitle__Rv3E5">
-                    <h4>Weather.app</h4>
-                    <div class="projects_projectTitleLine__QzzUe"></div>
-                    <a target="_blank" rel="nofollow" href="#">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                        height="1.6rem" width="1.6rem" color="var(--text)" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
-                        </path>
-                      </svg>
-                    </a>
-                    <a target="_blank" rel="nofollow" href="/projects/WeatherAPP/index.html">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                        height="1.6rem" width="1.6rem" color="var(--text)" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M888.3 757.4h-53.8c-4.2 0-7.7 3.5-7.7 7.7v61.8H197.1V197.1h629.8v61.8c0 4.2 3.5 7.7 7.7 7.7h53.8c4.2 0 7.7-3.4 7.7-7.7V158.7c0-17-13.7-30.7-30.7-30.7H158.7c-17 0-30.7 13.7-30.7 30.7v706.6c0 17 13.7 30.7 30.7 30.7h706.6c17 0 30.7-13.7 30.7-30.7V765.1c0-4.3-3.5-7.7-7.7-7.7zm18.6-251.7L765 393.7c-5.3-4.2-13-.4-13 6.3v76H438c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h314v76c0 6.7 7.8 10.5 13 6.3l141.9-112a8 8 0 0 0 0-12.6z">
-                        </path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div style="
-                      position: absolute;
-                      inset: 4px 0px 4px 100%;
-                      background: var(--main-color);
-                      z-index: 20;
-                    "></div>
-              </div>
-              <div style="
-                    position: relative;
-                    width: fit-content;
-                    overflow: hidden;
-                  ">
-                <div style="opacity: 1; transform: none">
-                  <div class="projects_projectTech__vVqDM">
-                    JavaScript - HTML - CSS - API
-                  </div>
-                </div>
-                <div style="
-                      position: absolute;
-                      inset: 4px 0px 4px 100%;
-                      background: var(--main-color);
-                      z-index: 20;
-                    "></div>
-              </div>
-              <div style="
-                    position: relative;
-                    width: fit-content;
-                    overflow: hidden;
-                  ">
-                <div style="opacity: 1; transform: none">
-                  <p id="content" class="projects_projectDescription__K2fsn long-text" data-text="content1">
-                    Enhance your weather experience with our free weather app!
-                    Get real-time data for any location, including
-                    temperature, humidity, wind speed, and precipitation. Plan
-                    ahead with accurate forecasts and customize locations or
-                    rely on automatic GPS detection. Stay prepared and make
-                    informed decisions. Download now and elevate your weather
-                    forecasting game!
-                  </p>
-
-                  <button class="show-more" data-target="content1">
-                    Read more
-                  </button>
-
-                  <!-- &gt -->
-                </div>
-                <div style="
-                      position: absolute;
-                      inset: 4px 0px 4px 100%;
-                      background: var(--main-color);
-                      z-index: 20;
-                    "></div>
-              </div>
-            </div>
-          </div>
-
-          <!--! FIRST PROJECT ENDS HERE  -->
-
-          <!--! SECOND PROJECT STARTS HERE  -->
-          <div style="opacity: 1; transform: none">
-            <div class="projects_projectImage__JxEFv">
-              <img src="/assets/glassLogin.png" alt="An image of the Paint.app project."
-                style="width: 85%; rotate: 0deg" />
-            </div>
-            <div class="projects_projectCopy__C5vpE">
-              <div style="position: relative; width: 100%; overflow: hidden">
-                <div style="opacity: 1; transform: none">
-                  <div class="projects_projectTitle__Rv3E5">
-                    <h4>Login-UI</h4>
-                    <div class="projects_projectTitleLine__QzzUe"></div>
-                    <a target="_blank" rel="nofollow" href="#">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                        height="1.6rem" width="1.6rem" color="var(--text)" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
-                        </path>
-                      </svg>
-                    </a>
-                    <a target="_blank" rel="nofollow" href="/projects/WeatherAPP/index.html">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                        height="1.6rem" width="1.6rem" color="var(--text)" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M888.3 757.4h-53.8c-4.2 0-7.7 3.5-7.7 7.7v61.8H197.1V197.1h629.8v61.8c0 4.2 3.5 7.7 7.7 7.7h53.8c4.2 0 7.7-3.4 7.7-7.7V158.7c0-17-13.7-30.7-30.7-30.7H158.7c-17 0-30.7 13.7-30.7 30.7v706.6c0 17 13.7 30.7 30.7 30.7h706.6c17 0 30.7-13.7 30.7-30.7V765.1c0-4.3-3.5-7.7-7.7-7.7zm18.6-251.7L765 393.7c-5.3-4.2-13-.4-13 6.3v76H438c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h314v76c0 6.7 7.8 10.5 13 6.3l141.9-112a8 8 0 0 0 0-12.6z">
-                        </path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div style="
-          position: absolute;
-          inset: 4px 0px 4px 100%;
-          background: var(--main-color);
-          z-index: 20;
-        "></div>
-              </div>
-              <div style="
-        position: relative;
-        width: fit-content;
-        overflow: hidden;
-      ">
-                <div style="opacity: 1; transform: none">
-                  <div class="projects_projectTech__vVqDM">
-                    JavaScript - HTML - CSS - API
-                  </div>
-                </div>
-                <div style="
-          position: absolute;
-          inset: 4px 0px 4px 100%;
-          background: var(--main-color);
-          z-index: 20;
-        "></div>
-              </div>
-              <div style="
-        position: relative;
-        width: fit-content;
-        overflow: hidden;
-      ">
-                <div style="opacity: 1; transform: none">
-                  <p id="content" class="projects_projectDescription__K2fsn long-text" data-text="content1">
-                    Unleash the power of Glass Login UI UX Design! With HTML, JavaScript, and CSS, create a visually
-                    stunning and intuitive login experience that captivates users from the start. The sleek transparent
-                    glass effect adds elegance, while interactive elements powered by JavaScript ensure seamless
-                    navigation. With polished CSS styling, make a memorable impression on your audience. Elevate your
-                    login screens with Glass Login UI UX Design and leave users impressed from the first interaction
-                  </p>
-
-                  <button class="show-more" data-target="content1">
-                    Read more
-                  </button>
-                  <!-- &gt -->
-                </div>
-                <div style="
-          position: absolute;
-          inset: 4px 0px 4px 100%;
-          background: var(--main-color);
-          z-index: 20;
-        "></div>
-              </div>
-            </div>
-          </div>
-          <!--! FIRST PROJECT STARTS HERE  -->
-
-
-
-
-
-
-
-          <!--! THIRD PROJECT STARTS HERE  -->
-          <div style="opacity: 1; transform: none">
-            <div class="projects_projectImage__JxEFv">
-              <img src="/assets/DadJokes.png" alt="An image of the Paint.app project."
-                style="width: 85%; rotate: 0deg" />
-            </div>
-            <div class="projects_projectCopy__C5vpE">
-              <div style="position: relative; width: 100%; overflow: hidden">
-                <div style="opacity: 1; transform: none">
-                  <div class="projects_projectTitle__Rv3E5">
-                    <h4>Dad-Joke-G </h4>
-                    <div class="projects_projectTitleLine__QzzUe"></div>
-                    <a target="_blank" rel="nofollow" href="#">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                        height="1.6rem" width="1.6rem" color="var(--text)" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
-                        </path>
-                      </svg>
-                    </a>
-                    <a target="_blank" rel="nofollow" href="/projects/WeatherAPP/index.html">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                        height="1.6rem" width="1.6rem" color="var(--text)" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M888.3 757.4h-53.8c-4.2 0-7.7 3.5-7.7 7.7v61.8H197.1V197.1h629.8v61.8c0 4.2 3.5 7.7 7.7 7.7h53.8c4.2 0 7.7-3.4 7.7-7.7V158.7c0-17-13.7-30.7-30.7-30.7H158.7c-17 0-30.7 13.7-30.7 30.7v706.6c0 17 13.7 30.7 30.7 30.7h706.6c17 0 30.7-13.7 30.7-30.7V765.1c0-4.3-3.5-7.7-7.7-7.7zm18.6-251.7L765 393.7c-5.3-4.2-13-.4-13 6.3v76H438c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h314v76c0 6.7 7.8 10.5 13 6.3l141.9-112a8 8 0 0 0 0-12.6z">
-                        </path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div style="
-  position: absolute;
-  inset: 4px 0px 4px 100%;
-  background: var(--main-color);
-  z-index: 20;
-"></div>
-              </div>
-              <div style="
-position: relative;
-width: fit-content;
-overflow: hidden;
-">
-                <div style="opacity: 1; transform: none">
-                  <div class="projects_projectTech__vVqDM">
-                    JavaScript - HTML - CSS - API
-                  </div>
-                </div>
-                <div style="
-  position: absolute;
-  inset: 4px 0px 4px 100%;
-  background: var(--main-color);
-  z-index: 20;
-"></div>
-              </div>
-              <div style="
-position: relative;
-width: fit-content;
-overflow: hidden;
-">
-                <div style="opacity: 1; transform: none">
-                  <p id="content" class="projects_projectDescription__K2fsn long-text" data-text="content1">
-                    Unleash laughter with our Dad Joke Generator app! Built with JavaScript, CSS, HTML, and API, it
-                    delivers endless hilarious dad jokes at your fingertips. Easy-to-use interface, guaranteed giggles.
-                    Download now and spread the joy!.
-                  </p>
-
-                  <button class="show-more" data-target="content1">
-                    Read more
-                  </button>
-
-                  <!-- &gt -->
-                </div>
-                <div style="
-  position: absolute;
-  inset: 4px 0px 4px 100%;
-  background: var(--main-color);
-  z-index: 20;
-"></div>
-              </div>
-            </div>
-          </div>
-
-
-          <!--! THIRD PROJECT ENDS HERE  -->
-
-          <!--! FORTH PROJECT ENDS HERE  -->
-          <div style="opacity: 1; transform: none">
-            <div class="projects_projectImage__JxEFv">
-              <img
-                src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                alt="An image of the Paint.app project." style="width: 85%; rotate: 0deg" />
-            </div>
-            <div class="projects_projectCopy__C5vpE">
-              <div style="position: relative; width: 100%; overflow: hidden">
-                <div style="opacity: 1; transform: none">
-                  <div class="projects_projectTitle__Rv3E5">
-                    <h4>CPMS.APP</h4>
-                    <div class="projects_projectTitleLine__QzzUe"></div>
-                    <a target="_blank" rel="nofollow" href="#">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                        height="1.6rem" width="1.6rem" color="var(--text)" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
-                        </path>
-                      </svg>
-                    </a>
-                    <a target="_blank" rel="nofollow" href="/projects/WeatherAPP/index.html">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                        height="1.6rem" width="1.6rem" color="var(--text)" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M888.3 757.4h-53.8c-4.2 0-7.7 3.5-7.7 7.7v61.8H197.1V197.1h629.8v61.8c0 4.2 3.5 7.7 7.7 7.7h53.8c4.2 0 7.7-3.4 7.7-7.7V158.7c0-17-13.7-30.7-30.7-30.7H158.7c-17 0-30.7 13.7-30.7 30.7v706.6c0 17 13.7 30.7 30.7 30.7h706.6c17 0 30.7-13.7 30.7-30.7V765.1c0-4.3-3.5-7.7-7.7-7.7zm18.6-251.7L765 393.7c-5.3-4.2-13-.4-13 6.3v76H438c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h314v76c0 6.7 7.8 10.5 13 6.3l141.9-112a8 8 0 0 0 0-12.6z">
-                        </path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div style="
-            position: absolute;
-            inset: 4px 0px 4px 100%;
-            background: var(--main-color);
-            z-index: 20;
-          "></div>
-              </div>
-              <div style="
-          position: relative;
-          width: fit-content;
-          overflow: hidden;
-        ">
-                <div style="opacity: 1; transform: none">
-                  <div class="projects_projectTech__vVqDM">
-                    Coning Soon!
-                  </div>
-                </div>
-                <div style="
-            position: absolute;
-            inset: 4px 0px 4px 100%;
-            background: var(--main-color);
-            z-index: 20;
-          "></div>
-              </div>
-              <div style="
-          position: relative;
-          width: fit-content;
-          overflow: hidden;
-        ">
-                <div style="opacity: 1; transform: none">
-                  <p id="content" class="projects_projectDescription__K2fsn long-text" data-text="content1">
-                    Coming soon! Experience the future of parking with our innovative Car Park Management System. Say
-                    goodbye to parking hassles and hello to unrivaled convenience. Our system features real-time
-                    availability tracking, seamless mobile payments, and intelligent parking guidance. Get ready for a
-                    stress-free parking experience like never before. Stay tuned for the grand unveiling of our
-                    game-changing solution. Park smarter, faster, and with ease
-                  </p>
-
-                  <button class="show-more" data-target="content1">
-                    Read more
-                  </button>
-
-                  <!-- &gt -->
-                </div>
-                <div style="
-            position: absolute;
-            inset: 4px 0px 4px 100%;
-            background: var(--main-color);
-            z-index: 20;
-          "></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!--! === FORTH PROJECT ENDS HERE  -->
   </div>
+
+  <!-- Project -->
+  <section id="projects" class="section-wrapper max-w-[70rem] mx-auto px-4 mt-44 sm:px-4 lg:px-8">
+
+    <div class="flex flex-row project_header_section ">
+      <div class="project_header_line w-100% h-0.5 bg-peach opacity-30 flex-1"></div>
+
+      <h3>
+        <div class="relative w-full overflow-hidden">
+          <div class="opacity-100 transform-none">
+            <span class="project_header_title">
+              Projects<span>.</span>
+            </span>
+          </div>
+        </div>
+      </h3>
+    </div>
+    <div class="projects_projects__y7TVk">
+      <!--! FIRST PROJECT STARTS HERE  -->
+      <div class="opacity-100 transform-none">
+        <div class="projects_projectImage__JxEFv ">
+          <img src="/assets/weather.png" alt="An image of the Paint.app project." class="w-85 transform rotate-0" />
+        </div>
+        <div class="projects_projectCopy__C5vpE">
+          <div class="relative w-full overflow-hidden">
+            <div class="opacity-100 transform-none">
+              <div class="projects_projectTitle__Rv3E5">
+                <h4>Weather.app</h4>
+                <div class="projects_projectTitleLine__QzzUe bg-peach"></div>
+                <a href="/path/to/your/first/link" class="text-text">
+                  <svg class="h-8 text-text text-peach" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                    <path
+                      d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
+                    </path>
+                  </svg>
+                </a>
+
+                <a href="/projects/WeatherAPP/index.html" class="text-text">
+                  <svg class="fill-current h-8 text-peach" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                    <path
+                      d="M888.3 757.4h-53.8c-4.2 0-7.7 3.5-7.7 7.7v61.8H197.1V197.1h629.8v61.8c0 4.2 3.5 7.7 7.7 7.7h53.8c4.2 0 7.7-3.4 7.7-7.7V158.7c0-17-13.7-30.7-30.7-30.7H158.7c-17 0-30.7 13.7-30.7 30.7v706.6c0 17 13.7 30.7 30.7 30.7h706.6c17 0 30.7-13.7 30.7-30.7V765.1c0-4.3-3.5-7.7-7.7-7.7zm18.6-251.7L765 393.7c-5.3-4.2-13-.4-13 6.3v76H438c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h314v76c0 6.7 7.8 10.5 13 6.3l141.9-112a8 8 0 0 0 0-12.6z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="relative w-full overflow-hidden
+                  ">
+            <div class="opacity-100 transform-none">
+              <div class="projects_projectTech__vVqDM">
+                JavaScript - HTML - CSS - API
+              </div>
+            </div>
+            <div class="relative w-full overflow-hidden
+                  ">
+              <div class="opacity-100 transform-none">
+                <p id="content" class="projects_projectDescription__K2fsn long-text" data-text="content1">
+                  Enhance your weather experience with our free weather app!
+                  Get real-time data for any location, including
+                  temperature, humidity, wind speed, and precipitation. Plan
+                  ahead with accurate forecasts and customize locations or
+                  rely on automatic GPS detection. Stay prepared and make
+                  informed decisions. Download now and elevate your weather
+                  forecasting game!
+                </p>
+                <button class="show-more" data-target="content1">
+                  Read more
+                </button>
+
+                <!-- &gt -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--! FIRST PROJECT ENDS HERE  -->
+
+        <!--! === FORTH PROJECT ENDS HERE  -->
+      </div>
 
   </section>
 
   <!-- Experience -->
   <!--? === EXPERIENCE SECTION STARTS HERE ===  -->
-  <section class="section-wrapper" id="experience">
-    <div class="header_sectionHeader__aMRKR" style="flex-direction: row-reverse">
+  <section class="section-wrapper max-w-[70rem] mx-auto px-4 mt-44 sm:px-4 lg:px-8" id="experience">
+    <div class="header_sectionHeader__aMRKR flex flex-row-reverse">
       <div class="header_line__AkXvu"></div>
       <h3>
-        <div style="position: relative; width: fit-content; overflow: hidden">
-          <div style="opacity: 1; transform: none">
+        <div class="relative w-fit-content overflow-hidden">
+          <div class="opacity-100 transform-none">
             <span class="header_title__V2_hm">
               Experience<span>.</span>
             </span>
           </div>
-          <div style="
-                    position: absolute;
-                    inset: 4px 0px 4px 100%;
-                    background: var(--main-color);
-                    z-index: 20;
-                  "></div>
         </div>
       </h3>
     </div>
@@ -1046,7 +732,7 @@ overflow: hidden;
   </section>
 
   <!--!Contact Section  -->
-  <section class="section-wrapper" id="contact">
+  <section class="section-wrapper max-w-[70rem] mx-auto px-4 mt-44 sm:px-4 lg:px-8" id="contact">
     <div class="contact_contactWrapper__imGw1">
       <div style="position: relative; width: 100%; overflow: hidden">
         <div style="opacity: 1; transform: none">
@@ -1120,7 +806,7 @@ overflow: hidden;
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script> -->
   <script>
     var typed = new Typed(".input", {
-      strings: ["Ezzy Zahedi", "Software Developer", "UI UX Designer"],
+      strings: ["Software Developer", "UI UX Designer"],
       typeSpeed: 50,
       backSpeed: 65,
       loop: true,

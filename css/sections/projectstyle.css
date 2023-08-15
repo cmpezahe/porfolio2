@@ -14,11 +14,11 @@
 
 
 
-.project_header_title {
+.about_header_title {
     font-size: var(--text-sub_header);
     font-weight: 900;
     text-align: end;
-    color: var(--text);
+    color: black;
 }
 
 .project_header_title span {

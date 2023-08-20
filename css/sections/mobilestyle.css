@@ -1,6 +1,7 @@
-@media screen and (max-width: 1250px) {
+@media(max-width: 1075px) {
     header {
         padding: 20px 5%;
+        justify-content: space-between;
     }
 
     .hamburger {
@@ -64,45 +65,12 @@
     }
 
     .main-content {
-        margin-top: 0px;
-        padding-top: 0px;
+        margin-top: 3rem;
     }
 
-    .main-content h1 {
-        font-size: 2.5rem;
-    }
 
-    .main-content p {
-        font-size: 14px;
-        width: 100%;
-    }
-
-    .social a {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-        margin-right: 10px;
-        margin-right: 17px;
-    }
 
     /*! === ABOUT SECTION STYLE ===  */
-    /* .about_about__section {
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: justify;
-
-    }
- */
-
-    /* .about_header_title {
-        font-size: 1.8rem;
-    } */
-
-
-    /* .show-more,
-    .show-less {
-        display: none;
-    } */
 
     /* ! === PROJECT STYLE HERE */
     .projects_projects__y7TVk {
@@ -129,10 +97,8 @@
 
 }
 
-@media screen and (max-width: 800px) {
-    /* .hero {
-        padding-top: 50px;
-    } */
+@media (max-width: 800px) {
+
 
     .logo {
         /* margin: 0 auto; */
@@ -145,179 +111,12 @@
     }
 
     .section-wrapper {
-        padding: 5.5rem 1.4rem;
-    }
+        padding: 6rem 1.4rem;
 
-    .main-content {
-        width: 100%;
-    }
-
-    .main-content h4 {
-        color: var(--main-color);
-        font-size: 1.4rem;
     }
 
     .section-wrapper h1 {
-        font-size: 2.3rem;
-    }
-
-    .main-content p {
-        font-size: 18px;
-        width: 100%;
-        line-height: 24px;
-    }
-
-    .social a {
-        margin-top: 5px;
-    }
-
-    .about_header_title {
-        font-size: 1.6rem;
-        font-weight: 600;
-
-    }
-
-    .about_about__section {
-        /* padding: 2rem; */
-        text-align: justify;
-
-    }
-
-    /*?================ PROJECT STYLE STAR HERE ====================  */
-    .project_header_title {
-        font-size: 1.6rem;
-        font-family: 600;
-    }
-
-    .projects_projects__y7TVk {
-        grid-template-columns: 1fr;
-        padding-top: 1.2rem;
-    }
-
-    .projects_projectTitle__Rv3E5 h4 {
-        font-size: 0.95rem;
-    }
-
-    .projects_projectTech__vVqDM {
-        font-size: 16px;
-    }
-
-    /*? ==== PROJECT STYLE END HERE===  */
-
-
-    /*! === EXPERIENCE STYLE STARTS HERE ====  */
-
-    .experience_experience__USIwr {
-        text-align: justify;
-    }
-
-    .header_title__V2_hm {
-        font-size: 1.6rem;
-        font-weight: 600;
-
-    }
-
-    .experience_title__hai7S {
-        font-size: 0.80rem;
-    }
-
-    .experience_heading__LeH28 span {
-        font-size: 0.70rem;
-    }
-
-    .experience_position__E06bW {
-        font-size: 0.70rem;
-    }
-
-    /*! === EXPERIENCE STYLE ENDS HERE  */
-    /* .show-more,
-    .show-less {
-        display: none;
-    } */
-
-    /*! === CONTACT STYLING   */
-    .contact_contactTitle__oMNhX {
-        font-size: 2.8rem;
-    }
-
-    .long-text {
-        height: 80px;
-        overflow: hidden;
-    }
-
-    .show-less,
-    .show-more {
-        display: inline;
-    }
-
-    .long-text.expanded {
-        height: auto;
-        margin-bottom: 0;
-    }
-
-    .show-more {
-        background-color: var(--main-color);
-        color: var(--background);
-        padding: 1.8px 6.5px;
-        border: none;
-        cursor: pointer;
-        font-size: 0.9rem;
-        border-radius: 1px;
-    }
-
-    .show-less {
-        background-color: var(--main-color);
-        color: var(--background);
-        padding: 1.8px 6.5px;
-        border: none;
-        cursor: pointer;
-        font-size: 0.9rem;
-        border-radius: 1px;
-    }
-
-
-}
-
-
-
-
-
-
-
-/*! ======================= SMALL SCREEN STYLING =====================  */
-
-@media screen and (max-width: 480px) {
-    header {
-        padding: 40px 5%;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .navlist a {
-        font-size: 12px;
-        margin-left: 8px;
-    }
-
-    .h-btn {
-        padding: 6px 14px;
-        font-size: 10px;
-    }
-
-    .main-content h4 {
-        font-size: 1.1rem;
-    }
-
-    .main-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .main-content p {
-        font-size: 15px;
-        width: 100%;
-        line-height: 20px;
-        text-align: justify;
+        font-size: var(--h-one-size);
     }
 
     .social {
@@ -325,18 +124,9 @@
         justify-content: center;
     }
 
-    .social a {
-        width: 25px;
-        height: 25px;
-        font-size: 28px;
-        margin-right: 86px;
-        margin-right: 14px;
-        margin-top: 10px;
-    }
-
     .main-btnn {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 
@@ -344,55 +134,56 @@
     .btn2 {
         display: inline-block;
         margin: 0 auto;
-        width: 90%;
+        width: 80%;
         padding: 13px;
         text-align: center;
     }
 
-    /* 
-    .about_about__section {
-        padding: 2rem 0.1rem;
-    }
+    /*?================ PROJECT STYLE STAR HERE ====================  */
 
-    .about_header_title {
-        font-weight: 600;
-        font-size: 1.5rem;
-    }
-
-    .about_aboutText_paragraph {
-        text-align: justify;
-    }
-
-    .about_highlightFirstLetter:first-letter {
-        padding: 0px;
-    } */
 
     .projects_projects__y7TVk {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0.5rem 0.4rem;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 1.2rem;
     }
 
-    .projects_projectTitle__Rv3E5 h4 {
+    /*? ==== PROJECT STYLE END HERE===  */
+
+
+    /*! === EXPERIENCE STYLE STARTS HERE ====  */
+
+
+
+
+
+    .experience_heading__LeH28 span {
         font-size: 0.85rem;
+        /* color: var(--main-color); */
     }
 
-    /* .projects_projectCopy__C5vpE {
-        background-color: rgba(128, 128, 128, 0.199);
-        padding: 5px;
-        border-radius: 8px;
-    } */
-
-    .project_header_title {
-        font-size: 1.5rem;
-        font-weight: 600;
+    /*! === CONTACT STYLING   */
+    .contact_contactTitle__oMNhX {
+        font-size: 2.8rem;
     }
+
+
+    .show-less,
+    .show-more {
+        display: inline;
+    }
+
+
+
+
+}
+
+
+/*! ======================= SMALL SCREEN STYLING =====================  */
+
+@media(max-width: 480px) {
+
 
     /* ===== EXPERIENCE DESIGN */
-    .header_title__V2_hm {
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
 
     .experience_experience__USIwr {
         padding: 0.1rem 0.2rem;
@@ -400,66 +191,11 @@
     }
 
     .experience_tech__jTuus {
-        margin: 2.3rem 0.2rem;
-    }
-
-    .experience_title__hai7S {
-        font-size: 0.8rem;
-    }
-
-    .experience_experience__USIwr span {
-        font-size: 0.6rem;
-    }
-
-    .contact_contactTitle__oMNhX {
-        font-size: 2.8rem;
-    }
-
-    .projects_projects__y7TVk p {
-        font-size: 0.7rem;
-        text-align: justify;
-    }
-
-    .projects_projectTech__vVqDM {
-        font-size: 0.6rem;
-    }
-
-    .long-text {
-        height: 80px;
-        overflow: hidden;
+        margin: 1.3rem 0.2rem;
     }
 
     .projects_projects__y7TVk p {
         margin-block-end: 0;
     }
 
-    .show-less,
-    .show-more {
-        display: inline;
-    }
-
-    .long-text.expanded {
-        height: auto;
-        margin-bottom: 0;
-    }
-
-    .show-more {
-        background-color: var(--main-color);
-        color: var(--background);
-        padding: 1.5px 6px;
-        border: none;
-        cursor: pointer;
-        font-size: 0.6rem;
-        border-radius: 1px;
-    }
-
-    .show-less {
-        background-color: var(--main-color);
-        color: var(--background);
-        padding: 1px 6px;
-        border: none;
-        cursor: pointer;
-        font-size: 0.6rem;
-        border-radius: 1px;
-    }
 }

@@ -17,7 +17,7 @@
 
 
 .header_title__V2_hm {
-    font-size: var(--text-sub_header);
+    font-size: 2.6rem;
     font-weight: 900;
     text-align: end;
     color: var(--text);
@@ -25,6 +25,9 @@
 
 .header_title__V2_hm span {
     color: var(--main-color);
+    font-family: 'Handjet', cursive;
+    font-size: 3.6rem;
+
 }
 
 .experience_experience__USIwr {
@@ -36,7 +39,7 @@
 }
 
 /* .experience_experience__USIwr span {
-    font-size: var(--span-font-size);
+    font-size: var(--p-size);
     color: var(--text)
 } */
 
@@ -56,21 +59,16 @@
 .experience_position__E06bW {
     color: var(--main-color);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 /* Pagragraph */
 .experience_description__iz3mi {
     margin-bottom: 1.8rem;
-    font-size: var(--paragraph-size);
+    font-size: var(--p-size);
     color: var(--text);
     line-height: 26px;
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 
@@ -84,6 +82,8 @@
     font-size: 15px;
     background: var(--background-light);
     padding: .2rem .8rem;
-    border-radius: 999px;
+    border-radius: 3px;
+
+
 
 }

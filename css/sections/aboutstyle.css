@@ -5,6 +5,22 @@
     margin-bottom: 0.75rem;
 }
 
+.about_header_title {
+    font-size: 2rem;
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+
+.about_header_title span {
+    font-size: 3rem;
+    font-family: 'Handjet', cursive;
+    color: #fff;
+}
+
+
+/*   font-family: 'Handjet', cursive; */
 .about_header_line {
     width: 100%;
     height: 1px;
@@ -13,7 +29,7 @@
 }
 
 .about-section .about_header_title {
-    font-size: var(sub_header_size);
+    font-size: 2rem;
     font-weight: 900;
     text-align: end;
     color: var(--text);
@@ -22,13 +38,241 @@
 .about_header_title span {
     color: var(--main-color);
 
-
 }
 
-.about-section p:first-letter {
+/* .about-section p:first-letter {
     background: var(--background-light);
     padding: 0.7rem;
     border-radius: .3rem;
     margin-right: .6rem;
     float: left;
+} */
+
+
+
+
+#about {
+    width: 100%;
+
+    display: flex;
+
+    padding: 3% 2%;
+
+}
+
+#about .images {
+    height: 100%;
+    width: 100%;
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#about .images img {
+    height: 436px;
+    width: 380px;
+    transition: .6s;
+    object-fit: cover;
+    border: 1px solid var(--main-color);
+}
+
+#about .images img:nth-child(2) {
+    position: absolute;
+    height: 340px;
+    width: 260px;
+    top: 50%;
+    left: -6%;
+}
+
+#about .images::after {
+    position: absolute;
+    content: "";
+    bottom: -12%;
+    left: 54%;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+
+
+#about .images::before {
+    position: absolute;
+    content: "";
+    top: 35%;
+    left: -6%;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+}
+
+#about .about-me-content {
+    height: 100%;
+    width: 100%;
+    flex: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* #about .about-me-content h2 {
+    font-size: 1.8rem;
+    color: white;
+} */
+
+#about .about-me-content h1 {
+    line-height: 1.2;
+    color: var(--main-color);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#about .about-me-content p {
+    width: 100%;
+    color: var(--text);
+    font-size: var(--p-size);
+    font-weight: 200;
+    margin-bottom: 15px;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.row .col label {
+    font-size: 1.2rem;
+    font: 500;
+    color: var(--text);
+
+}
+
+#about .details p {
+    color: var(--main-color);
+}
+
+#about button {
+    padding: 12px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    /* columns: #fff; */
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.55s ease;
+    /* color: var(--text); */
+    backdrop-filter: brightness(88%);
+    box-shadow: 0 0 20px transparent;
+}
+
+#about button:hover {
+    background: var(--background);
+    box-shadow: 0 0 20px var(--main-color);
+    color: var(--main-color);
+}
+
+
+
+@keyframes way {
+    0% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* ==== Mobile Devices ====== */
+
+@media (max-width:1100px) {
+    #about {
+        flex-direction: column;
+    }
+
+    #about .about-me-content {
+        margin-top: 80px;
+    }
+
+    #about .images img {
+        height: 400px;
+        width: 310px;
+    }
+
+    #about .images img:nth-child(2) {
+        height: 250px;
+        width: 200px;
+        top: 55%;
+        left: 55%;
+
+    }
+
+    #about .images::after {
+        left: 45%;
+
+    }
+
+    #about .images::before {
+        top: 15%;
+        left: 74%;
+    }
+
+
+
+    #about .about-me-content h1 {
+        width: 80%;
+
+    }
+}
+
+
+@media (max-width:768px) {
+
+    #about .images img:nth-child(2) {
+        height: 200px;
+        width: 150px;
+        top: 59%;
+        left: 60%;
+    }
+
+    #about .images img {
+        height: 350px;
+        width: 275px;
+    }
+
+    #about .images::after,
+    #about .images::before {
+        display: none;
+    }
+
+
+}
+
+@media (max-width:480px) {
+    #about .images img:nth-child(2) {
+        height: 135px;
+        width: 100px;
+        top: 75%;
+        left: 69%;
+
+    }
+
+    #about .about-me-content h1 {
+        width: 100%;
+        font: 2.5rem;
+    }
 }

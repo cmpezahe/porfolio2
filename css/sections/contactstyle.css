@@ -1,15 +1,23 @@
+#contact {
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+}
+
 /* Contact Container */
 .contact_contactWrapper__imGw1 {
     max-width: 700px;
     margin: auto;
     color: var(--text);
     border-radius: 1.2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Contact Titile */
 /* h4 */
 .contact_contactTitle__oMNhX {
-    font-size: var(--text-md);
+    font-size: 3.6rem;
     text-align: center;
     font-weight: 900;
     line-height: 1;
@@ -18,14 +26,15 @@
 /* Dot /span */
 .contact_contactTitle__oMNhX span {
     color: var(--main-color);
+    font-family: 'Handjet', cursive;
 }
 
 /* Contact Pagaragraph */
 .contact_contactCopy__oCo8c {
     text-align: center;
-    font-weight: 200;
+    font-weight: 300;
     margin: 2.4rem 0;
-    font-size: var(--paragraph-size);
+    font-size: var(--p-size);
 }
 
 /* Contact Email section  */
@@ -36,10 +45,17 @@
     gap: .6rem;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: var(--text-sub-sub_header);
+    font-size: var(--p-size);
     margin: auto;
     transition: color .25s;
     color: var(--text);
+    padding: 10px;
+}
+
+.contact_contactEmail__Fr6hH:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+
 }
 
 /* An Tag */

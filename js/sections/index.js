@@ -1,6 +1,6 @@
 // Button text
-const readMoreText = "Read more";
-const readLessText = "Read less";
+const readMoreText = "Read ->";
+const readLessText = "Hide <-";
 
 // Get elements
 const buttons = document.querySelectorAll(".show-more");

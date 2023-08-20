@@ -16,7 +16,7 @@
     --background: #222;
     /* --background-light: #232323; */
     --background-light: #88b4db48;
-    --background-dark: #00539C;
+    /* --background-dark: #00539C; */
     --text: #ebecf3;
     --h-one-size: 3rem;
     --p-size: 1.3rem;
@@ -50,7 +50,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 15px 15%;
+    padding: 10px 15%;
     background: transparent;
     transition: all 0.55s ease;
     background-color: var(--background);

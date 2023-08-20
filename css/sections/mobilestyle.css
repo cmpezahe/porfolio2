@@ -183,7 +183,39 @@
 @media(max-width: 480px) {
 
 
-    /* ===== EXPERIENCE DESIGN */
+    .section-wrapper p {
+        font-size: 1rem;
+    }
+
+    #hero {
+        padding-top: .75rem;
+        text-align: justify;
+    }
+
+    .main-content h4 {
+        font-size: 1.9rem;
+        font-weight: 300;
+
+    }
+
+    /* About Style */
+    #about .about-me-content p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /* Project Style */
+    #projects p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /* Experience Style */
+
+    #experience p {
+        font-size: 1rem;
+        text-align: justify;
+    }
 
     .experience_experience__USIwr {
         padding: 0.1rem 0.2rem;

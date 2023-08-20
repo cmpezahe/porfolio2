@@ -49,7 +49,7 @@
 }
 
 #projects .p-p {
-    margin: 60px 0;
+    margin: 20px 0;
 }
 
 
@@ -59,6 +59,10 @@
     grid-template-columns: repeat(2, 1fr);
     /* grid-gap: 3.2rem; */
     gap: 3rem;
+}
+
+.projects_projects__y7TVk svg {
+    color: var(--main-color);
 }
 
 .projects_projectImage__JxEFv {
